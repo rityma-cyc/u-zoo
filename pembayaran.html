@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran - U-Zoo</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">U-Zoo</a>
+                <ul class="nav-links">
+                    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                    <li><a href="#">Konservasi</a></li>
+                    <li><a href="#">Event & Edukasi</a></li>
+                </ul>
+                <a href="tiket.html" class="btn btn-primary">Buy Tickets</a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="payment-page">
+            <div class="container">
+                <div id="payment-selection">
+                    <h1 class="section-title">Pilih Metode Pembayaran</h1>
+                    <div class="payment-options-grid">
+                        <div class="payment-method" data-method="qris">
+                            <img src="images/qris.png" alt="QRIS">
+                            <span>QRIS</span>
+                        </div>
+                        <div class="payment-method" data-method="va">
+                            <img src="images/va.png" alt="Virtual Account">
+                            <span>Virtual Account</span>
+                        </div>
+                        <div class="payment-method" data-method="ewallet">
+                            <img src="images/ewallet.png" alt="E-Wallet">
+                            <span>E-Wallet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="payment-processing" class="hidden">
+                    <h1 class="section-title">Memproses Pembayaran...</h1>
+                    <div class="spinner"></div>
+                    <p>Mohon tunggu, kami sedang mengonfirmasi pembayaran Anda. Anda akan segera dialihkan.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">  <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Wildlife Sanctuary</h3>
+                <p>Conservation, Education, Entertainment</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Animals</a></li>
+                    <li><a href="#">Visit</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Conservation</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 U-Zoo. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

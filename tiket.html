@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-Zoo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">U-Zoo</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Kunjungan</a></li>
+                    <li><a href="#">Binatang</a></li>
+                    <li><a href="#">Konservasi</a></li>
+                    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                </ul>
+                <a href="tiket.html" class="btn btn-primary">Buy Tickets</a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <section class="booking-hero">
+        <div class="container">
+            <h1 class="section-title">Pesan Petualangan Anda</h1>
+            <p class="subtitle">Amankan tempat Anda untuk menyaksikan keajaiban dunia satwa. Setiap tiket mendukung upaya konservasi kami untuk melindungi spesies langka.</p>
+        </div>
+    </section>
+
+    <section class="pricing">
+    <div class="container">
+        <div class="pricing-grid">
+            
+            <div class="price-card">
+                <img src="images/adult.jpg" alt="Tiket Dewasa">
+                <div class="price-card-content">
+                    <h3>Dewasa</h3>
+                    <p>Usia 13 tahun ke atas</p>
+                    <div class="price">Rp 150.000</div>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <img src="images/kids.jpg" alt="Tiket Anak">
+                <div class="price-card-content">
+                    <h3>Anak-anak</h3>
+                    <p>Usia 3 - 12 tahun</p>
+                    <div class="price">Rp 100.000</div>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <img src="images/family.jpg" alt="Tiket Keluarga">
+                <div class="price-card-content">
+                    <h3>Keluarga</h3>
+                    <p>2 Dewasa & 2 Anak</p>
+                    <div class="price">Rp 450.000</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="plan-visit">
+    <div class="container grid-2-col" id="ticket-form-layout">
+        <div class="booking-form-container">
+            <h2 class="section-title" style="text-align: left;">Rencanakan Kunjungan Anda</h2>
+            
+            <form class="booking-form" id="booking-form">
+                <div class="form-main-layout">
+                    <div class="form-col">
+                        <div class="form-row">
+                        <div class="form-group">
+                            <label for="adult-tickets">Tiket Dewasa</label>
+                            <input type="number" id="adult-tickets" value="1" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="child-tickets">Tiket Anak</label>
+                            <input type="number" id="child-tickets" value="0" min="0">
+                        </div>
+                    </div>
+                <div class="form-group">
+                    <label for="visit-date">Tanggal Kunjungan</label>
+                    <input type="date" id="visit-date" required>
+                </div>
+                <div class="total-price-container-new">
+                    <p>Total Harga</p>
+                <span id="total-price">Rp 150.000</span>
+            </div>
+        </div>
+
+        <div class="form-col">
+            <h3 class="form-subtitle">Informasi Anda</h3>
+            <div class="form-group">
+                <label for="full-name">Nama Lengkap</label>
+                <input type="text" id="full-name" placeholder="Contoh: Budi Santoso" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" placeholder="Contoh: budi@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="whatsapp">Nomor WhatsApp (Opsional)</label>
+                <input type="tel" id="whatsapp" placeholder="Contoh: 081234567890">
+            </div>
+            </div>
+        </div>
+            <div class="form-action-row">
+        <button type="submit" class="btn btn-primary btn-full">Lanjutkan Pembayaran</button>
+    </div>
+    
+</form>
+        </div>
+        <div class="plan-visit-img">
+            <img src="images/burung.jpg" alt="Burung Nuri">
+        </div>
+    </div>
+</section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Pertanyaan Umum (FAQ)</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Apakah tiket bisa di-refund?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Tiket tidak dapat di-refund, namun bisa dijadwalkan ulang hingga 48 jam sebelum tanggal kunjungan, tergantung ketersediaan.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Bagaimana cara menunjukkan tiket saya?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Anda bisa menunjukkan tiket melalui perangkat seluler (kami akan memindai kode QR) atau dalam bentuk cetak di pintu masuk.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Apakah ada diskon yang tersedia?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Ya, kami menawarkan diskon untuk pelajar, lansia, dan anggota militer dengan menunjukkan ID yang valid. Silakan beli tiket ini langsung di loket.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer id="main-footer">  <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Wildlife Sanctuary</h3>
+                <p>Conservation, Education, Entertainment</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Animals</a></li>
+                    <li><a href="#">Visit</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Conservation</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 U-Zoo. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
